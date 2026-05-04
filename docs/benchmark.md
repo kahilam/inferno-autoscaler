@@ -51,26 +51,12 @@ Summary of WVA benchmark runs with configuration details.
 ## Prefill Heavy Scenario
 
 **llm-d Release:** v0.6.0
-<<<<<<< HEAD
-**Model:** meta-llama/Llama-3.1-8B-Instruct
-=======
 **Model:** unsloth/Meta-Llama-3.1-8B
->>>>>>> 5f2f280 (docs: Add WVA benchmark results for prefill heavy, decode heavy, and symmetrical scenarios)
 **Workload:** 4000 prompt tokens, 1000 output tokens, 20 RPS, 600s duration
 **Saturation Engine:** Default(v1), Tuned(v1)
 
 | Metric | WVA v0.6.0 Default(v1) | WVA v0.6.0 Tuned(v1) (prefill) |
 |--------|----------------|------------------------|
-<<<<<<< HEAD
-| P99 TTFT (ms) | _TBD_ | _TBD_ |
-| P99 ITL (ms) | _TBD_ | _TBD_ |
-| Avg replicas | _TBD_ | _TBD_ |
-| Max replicas | _TBD_ | _TBD_ |
-| Avg KV cache utilization | _TBD_ | _TBD_ |
-| Avg queue depth (EPP) | _TBD_ | _TBD_ |
-| Error count | _TBD_ | _TBD_ |
-| Cost (avg replicas × GPU/hr) | _TBD_ | _TBD_ |
-=======
 | P99 TTFT (ms) | 64,968 | _TBD_ |
 | P99 ITL (ms) | 68.45 | _TBD_ |
 | Avg replicas | 1.91 | _TBD_ |
@@ -79,31 +65,16 @@ Summary of WVA benchmark runs with configuration details.
 | Avg queue depth (EPP) | 158.36 | _TBD_ |
 | Error count | 361 (510 incomplete) | _TBD_ |
 | Cost (avg replicas × GPU/hr) | 1.91 | _TBD_ |
->>>>>>> 5f2f280 (docs: Add WVA benchmark results for prefill heavy, decode heavy, and symmetrical scenarios)
 
 ## Decode Heavy Scenario
 
 **llm-d Release:** v0.6.0
-<<<<<<< HEAD
-**Model:** meta-llama/Llama-3.1-8B-Instruct
-=======
 **Model:** unsloth/Meta-Llama-3.1-8B
->>>>>>> 5f2f280 (docs: Add WVA benchmark results for prefill heavy, decode heavy, and symmetrical scenarios)
 **Workload:** 1000 prompt tokens, 4000 output tokens, 20 RPS, 600s duration
 **Saturation Engine:** Default(v1), Tuned(v1)
 
 | Metric |WVA v0.6.0 Default(v1) | WVA v0.6.0 Tuned(v1) (decode) |
 |--------|----------------|------------------------|
-<<<<<<< HEAD
-| P99 TTFT (ms) | _TBD_ | _TBD_ |
-| P99 ITL (ms) | _TBD_ | _TBD_ |
-| Avg replicas | _TBD_ | _TBD_ |
-| Max replicas | _TBD_ | _TBD_ |
-| Avg KV cache utilization | _TBD_ | _TBD_ |
-| Avg queue depth (EPP) | _TBD_ | _TBD_ |
-| Error count | _TBD_ | _TBD_ |
-| Cost (avg replicas × GPU/hr) | _TBD_ | _TBD_ |
-=======
 | P99 TTFT (ms) | 41,361 | _TBD_ |
 | P99 ITL (ms) | 38.03 | _TBD_ |
 | Avg replicas | 1.92 | _TBD_ |
@@ -112,31 +83,16 @@ Summary of WVA benchmark runs with configuration details.
 | Avg queue depth (EPP) | 34.25 | _TBD_ |
 | Error count | 192 (511 incomplete) | _TBD_ |
 | Cost (avg replicas × GPU/hr) | 1.92 | _TBD_ |
->>>>>>> 5f2f280 (docs: Add WVA benchmark results for prefill heavy, decode heavy, and symmetrical scenarios)
 
 ## Symmetrical Scenario
 
 **llm-d Release:** v0.6.0
-<<<<<<< HEAD
-**Model:** meta-llama/Llama-3.1-8B-Instruct
-=======
 **Model:** unsloth/Meta-Llama-3.1-8B
->>>>>>> 5f2f280 (docs: Add WVA benchmark results for prefill heavy, decode heavy, and symmetrical scenarios)
 **Workload:** 1000 prompt tokens, 1000 output tokens, 20 RPS, 600s duration
 **Saturation Engine:** Default(v1)
 
 | Metric | WVA v0.6.0 Default(v1) |
 |--------|----------------|
-<<<<<<< HEAD
-| P99 TTFT (ms) | _TBD_ |
-| P99 ITL (ms) | _TBD_ |
-| Avg replicas | _TBD_ |
-| Max replicas | _TBD_ |
-| Avg KV cache utilization | _TBD_ |
-| Avg queue depth (EPP) | _TBD_ |
-| Error count | _TBD_ |
-| Cost (avg replicas × GPU/hr) | _TBD_ |
-=======
 | P99 TTFT (ms) | 2,188 |
 | P99 ITL (ms) | 35.09 |
 | Avg replicas | 1.92 |
@@ -145,4 +101,3 @@ Summary of WVA benchmark runs with configuration details.
 | Avg queue depth (EPP) | 4.38 |
 | Error count | 0 (343 incomplete) |
 | Cost (avg replicas × GPU/hr) | 1.92 |
->>>>>>> 5f2f280 (docs: Add WVA benchmark results for prefill heavy, decode heavy, and symmetrical scenarios)
