@@ -194,11 +194,12 @@ Wait until you see:
 
 ### Monitor During the Benchmark
 
-In a separate terminal, watch the scaling behavior:
+In a separate terminal, monitor the scaling behavior:
 
 ```bash
-watch oc get hpa -n <your-namespace>
-watch oc get variantautoscaling -n <your-namespace>
+oc get pods -n <your-namespace>
+oc get hpa -n <your-namespace>
+oc get variantautoscaling -n <your-namespace>
 ```
 
 ### Cleanup
