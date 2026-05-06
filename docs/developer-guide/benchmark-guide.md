@@ -198,8 +198,6 @@ In a separate terminal, monitor the scaling behavior:
 
 ```bash
 oc get pods -n <your-namespace>
-oc get hpa -n <your-namespace>
-oc get variantautoscaling -n <your-namespace>
 ```
 
 ### Cleanup
