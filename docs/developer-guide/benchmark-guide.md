@@ -116,6 +116,11 @@ Install the benchmark CLI — this clones `llm-d-benchmark` into your workspace 
 make benchmark-install
 ```
 
+> **Note:** If your system Python is older than 3.11, the install will fail. Use the `--uv` flag to let `uv` download the correct Python version automatically:
+> ```bash
+> make benchmark-install BENCHMARK_UV=true
+> ```
+
 After this, your workspace will look like:
 
 ```
