@@ -161,13 +161,31 @@ make benchmark-run BENCHMARK_NAMESPACE=<your-namespace> BENCHMARK_WORKLOAD=prefi
 
 Repeat with `decode_heavy.yaml` or `symmetrical.yaml` for the other scenarios.
 
+Wait until you see:
+```
+✅ Run complete (mode=full, harness=guidellm).
+```
+
+Results are saved automatically in a timestamped directory at the repo root:
+```
+<username>-YYYYMMDD-HHMMSS/
+└── results/
+    └── guidellm-<id>/
+        ├── benchmark_report_v0.2,_results.json_0.yaml   ← full metrics
+        ├── results.json
+        └── run_metadata.yaml
+```
+
 **3. Tear down when done:**
 
 ```bash
 make benchmark-teardown BENCHMARK_NAMESPACE=<your-namespace>
 ```
 
-Results are saved automatically in a timestamped directory at the repo root (e.g. `<username>-YYYYMMDD-HHMMSS/results/`).
+Wait until you see:
+```
+✅ Teardown complete (normal).
+```
 
 > **Tip:** To run standup + all 3 scenarios + teardown in one command:
 > ```bash
