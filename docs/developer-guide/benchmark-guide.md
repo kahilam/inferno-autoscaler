@@ -192,4 +192,19 @@ Wait until you see:
 > make benchmark-full BENCHMARK_NAMESPACE=<your-namespace>
 > ```
 
+### Monitor During the Benchmark
+
+In a separate terminal, watch the scaling behavior:
+
+```bash
+watch oc get hpa -n <your-namespace>
+watch oc get variantautoscaling -n <your-namespace>
+```
+
+### Cleanup
+
+```bash
+oc delete project <your-namespace>
+```
+
 ---
