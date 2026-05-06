@@ -95,7 +95,7 @@ All other configuration is passed directly to the deploy/test commands in later 
 
 ## Step 4: Clone the Repository
 
-If you haven't already:
+Clone the WVA repository and enter the directory:
 
 ```bash
 git clone https://github.com/llm-d/llm-d-workload-variant-autoscaler.git
@@ -110,10 +110,22 @@ git checkout main
 # gh pr checkout <pr-number>
 ```
 
-Install the benchmark CLI — this clones `llm-d-benchmark` into your workspace (once per workspace):
+Install the benchmark CLI — this clones `llm-d-benchmark` into your workspace and sets up the `llmdbenchmark` CLI (once per workspace):
 
 ```bash
 make benchmark-install
+```
+
+After this, your workspace will look like:
+
+```
+llm-d-workload-variant-autoscaler/
+├── llm-d-benchmark/          ← cloned by make benchmark-install
+├── test/benchmark/scenarios/
+│   ├── prefill_heavy.yaml
+│   ├── decode_heavy.yaml
+│   └── symmetrical.yaml
+└── Makefile
 ```
 
 ---
