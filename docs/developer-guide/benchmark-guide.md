@@ -135,7 +135,7 @@ llm-d-workload-variant-autoscaler/
 
 ---
 
-## Step 5a: Run the Single-Model Benchmark
+## Step 5: Run the Single-Model Benchmark
 
 The single-model benchmark tests WVA scaling behavior with one model under different workload patterns. Scenario configurations are defined in `test/benchmark/scenarios/`.
 
@@ -191,54 +191,5 @@ Wait until you see:
 > ```bash
 > make benchmark-full BENCHMARK_NAMESPACE=<your-namespace>
 > ```
-
----
-
-## Step 5b: Run the Multi-Model Benchmark
-
-The multi-model benchmark tests WVA scaling across multiple models sharing the same infrastructure.
-
-Replace `<your-namespace>` with your namespace:
-
-```bash
-# 1. Undeploy previous run (clean slate)
-make undeploy-multi-model-infra \
-  ENVIRONMENT=openshift \
-  WVA_NS=<your-namespace> LLMD_NS=<your-namespace> \
-  DEPLOY_PROMETHEUS_ADAPTER=false \
-  MODELS="Qwen/Qwen3-0.6B,unsloth/Meta-Llama-3.1-8B"
-
-# 2. Deploy multi-model infrastructure
-make deploy-multi-model-infra \
-  ENVIRONMENT=openshift \
-  WVA_NS=<your-namespace> LLMD_NS=<your-namespace> \
-  NAMESPACE_SCOPED=true SKIP_BUILD=true \
-  DECODE_REPLICAS=1 IMG_TAG=v0.6.0 LLM_D_RELEASE=v0.6.0 \
-  DEPLOY_PROMETHEUS_ADAPTER=false \
-  MODELS="Qwen/Qwen3-0.6B,unsloth/Meta-Llama-3.1-8B"
-
-# 3. Run the benchmark
-make test-multi-model-scaling \
-  ENVIRONMENT=openshift \
-  LLMD_NS=<your-namespace> \
-  MODELS="Qwen/Qwen3-0.6B,unsloth/Meta-Llama-3.1-8B"
-```
-
-Expected result: `make test-multi-model-scaling` passes with exit code 0.
-
-### Monitor During the Benchmark
-
-In a separate terminal, watch the scaling behavior:
-
-```bash
-watch oc get hpa -n <your-namespace>
-watch oc get variantautoscaling -n <your-namespace>
-```
-
-### Cleanup
-
-```bash
-oc delete project <your-namespace>
-```
 
 ---
