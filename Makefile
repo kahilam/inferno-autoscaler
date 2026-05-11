@@ -414,6 +414,26 @@ benchmark-run-bursty: ## Run bursty traffic benchmark using inference-perf multi
 		-U http://infra-llmdbench-inference-gateway-istio.$(BENCHMARK_NAMESPACE).svc.cluster.local:80 \
 		$(if $(filter true,$(BENCHMARK_MONITORING)),--monitoring,)
 
+SCALE_FROM_ZERO_WORKLOAD ?= scale-from-zero.yaml
+
+.PHONY: benchmark-run-scale-from-zero
+benchmark-run-scale-from-zero: ## Run scale-from-zero benchmark (set BENCHMARK_NAMESPACE=<namespace>)
+	@if [ -z "$(BENCHMARK_NAMESPACE)" ]; then \
+		echo "ERROR: BENCHMARK_NAMESPACE is required. Usage: make benchmark-run-scale-from-zero BENCHMARK_NAMESPACE=<namespace>"; \
+		exit 1; \
+	fi
+	@if [ -f "$(BENCHMARK_SCENARIOS_DIR)/$(SCALE_FROM_ZERO_WORKLOAD)" ]; then \
+		cp "$(BENCHMARK_SCENARIOS_DIR)/$(SCALE_FROM_ZERO_WORKLOAD)" \
+		   "$(BENCHMARK_REPO_DIR)/workload/profiles/inference-perf/$(SCALE_FROM_ZERO_WORKLOAD)"; \
+	fi
+	$(LLMDBENCHMARK) $(BENCHMARK_CLI_FLAGS) run \
+		-p $(BENCHMARK_NAMESPACE) \
+		-l inference-perf \
+		-w $(SCALE_FROM_ZERO_WORKLOAD) \
+		-U http://infra-llmdbench-inference-gateway-istio.$(BENCHMARK_NAMESPACE).svc.cluster.local:80 \
+		$(if $(BENCHMARK_MODEL_ID),-m $(BENCHMARK_MODEL_ID),) \
+		$(if $(filter true,$(BENCHMARK_MONITORING)),--monitoring,)
+
 .PHONY: benchmark-run-all
 benchmark-run-all: ## Run all scenarios: teardown → standup → run per scenario (set BENCHMARK_NAMESPACE=<namespace>)
 	@if [ -z "$(BENCHMARK_NAMESPACE)" ]; then \
