@@ -94,14 +94,14 @@ Summary of WVA benchmark runs with configuration details.
 
 | Metric | Run 1 | Run 2 | Run 3 | Avg |
 |--------|-------|-------|-------|-----|
-| P99 TTFT (ms) | 264,266 | _TBD_ | _TBD_ | _TBD_ |
-| P99 ITL (ms/token) | 196.1 | _TBD_ | _TBD_ | _TBD_ |
-| Avg replicas | 2.46 | _TBD_ | _TBD_ | _TBD_ |
-| Max replicas | 4 | _TBD_ | _TBD_ | _TBD_ |
-| Avg KV cache utilization | 31.5% | _TBD_ | _TBD_ | _TBD_ |
-| Avg queue depth (EPP) | 15.3 | _TBD_ | _TBD_ | _TBD_ |
-| Error count | 6,230 | _TBD_ | _TBD_ | _TBD_ |
-| Cost (avg replicas × GPU/hr) | 2.46 | _TBD_ | _TBD_ | _TBD_ |
+| P99 TTFT (ms) | 264,266 | 257,501 | _TBD_ | _TBD_ |
+| P99 ITL (ms/token) | 196.1 | 210.3 | _TBD_ | _TBD_ |
+| Avg replicas | 2.46 | 2.29 | _TBD_ | _TBD_ |
+| Max replicas | 4 | 4 | _TBD_ | _TBD_ |
+| Avg KV cache utilization | 31.5% | 50.9% | _TBD_ | _TBD_ |
+| Avg queue depth (EPP) | 15.3 | 113.0 | _TBD_ | _TBD_ |
+| Error count | 6,230 | 6,021 | _TBD_ | _TBD_ |
+| Cost (avg replicas × GPU/hr) | 2.46 | 2.29 | _TBD_ | _TBD_ |
 
 ## Symmetrical Scenario
 
