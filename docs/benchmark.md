@@ -85,6 +85,24 @@ Summary of WVA benchmark runs with configuration details.
 | Error count | 3,506 / 4,105 | _TBD_ |
 | Cost (avg replicas × GPU/hr) | _TBD_ | _TBD_ |
 
+## Bursty Scenario
+
+**llm-d Release:** v0.6.0
+**Model:** Qwen/Qwen3-32B
+**Workload:** ~1000 prompt tokens, ~1000 output tokens, multi-stage bursty RPS (15→2→10→15→5→2), 900s total duration
+**Saturation Engine:** Default(v1)
+
+| Metric | Run 1 | Run 2 | Run 3 | Avg |
+|--------|-------|-------|-------|-----|
+| P99 TTFT (ms) | 264,266 | _TBD_ | _TBD_ | _TBD_ |
+| P99 ITL (ms/token) | 196.1 | _TBD_ | _TBD_ | _TBD_ |
+| Avg replicas | 2.46 | _TBD_ | _TBD_ | _TBD_ |
+| Max replicas | 4 | _TBD_ | _TBD_ | _TBD_ |
+| Avg KV cache utilization | 31.5% | _TBD_ | _TBD_ | _TBD_ |
+| Avg queue depth (EPP) | 15.3 | _TBD_ | _TBD_ | _TBD_ |
+| Error count | 6,230 | _TBD_ | _TBD_ | _TBD_ |
+| Cost (avg replicas × GPU/hr) | 2.46 | _TBD_ | _TBD_ | _TBD_ |
+
 ## Symmetrical Scenario
 
 **llm-d Release:** v0.6.0
