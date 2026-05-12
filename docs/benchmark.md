@@ -101,6 +101,7 @@ Summary of WVA benchmark runs with configuration details.
 | Avg KV cache utilization | 31.5% | 50.9% | 52.9% | 45.1% |
 | Avg queue depth (EPP) | 15.3 | 113.0 | 32.3 | 53.5 |
 | Error count | 6,230 | 6,021 | 6,079 | 6,110 |
+| Avg pod startup (s) | 109 | 101 | 100 | 103 |
 | Cost (avg replicas × GPU/hr) | 2.46 | 2.29 | 2.55 | 2.43 |
 
 ## Symmetrical Scenario
