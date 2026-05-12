@@ -58,15 +58,15 @@ Summary of WVA benchmark runs with configuration details.
 
 | Metric | WVA v0.6.0 Default(v1) Run 1 | WVA v0.6.0 Default(v1) Run 2 | WVA v0.6.0 Default(v1) Run 3 | Avg | WVA v0.6.0 Tuned(v1) (prefill) |
 |--------|------------------------------|------------------------------|------------------------------|-----|--------------------------------|
-| P99 TTFT (ms) | 98,810 | 97,811 | _TBD_ | _TBD_ | _TBD_ |
-| P99 ITL (ms/token) | 55.06 | 54.4 | _TBD_ | _TBD_ | _TBD_ |
-| Avg replicas | 1.68 | 1.77 | _TBD_ | _TBD_ | _TBD_ |
-| Max replicas | 3 | 3 | _TBD_ | _TBD_ | _TBD_ |
-| Avg KV cache utilization | 65.1% | 69.2% | _TBD_ | _TBD_ | _TBD_ |
-| Avg queue depth (EPP) | 236.8 | 252.4 | _TBD_ | _TBD_ | _TBD_ |
-| Error count | 4,186 / 4,882 | 4,193 | _TBD_ | _TBD_ | _TBD_ |
-| Avg pod startup (s) | _TBD_ | 106 | _TBD_ | _TBD_ | _TBD_ |
-| Cost (avg replicas × GPU/hr) | _TBD_ | 1.77 | _TBD_ | _TBD_ | _TBD_ |
+| P99 TTFT (ms) | 98,810 | 97,811 | 98,638 | 98,420 | _TBD_ |
+| P99 ITL (ms/token) | 55.06 | 54.4 | 54.98 | 54.8 | _TBD_ |
+| Avg replicas | 1.68 | 1.77 | 1.73 | 1.73 | _TBD_ |
+| Max replicas | 3 | 3 | 3 | 3 | _TBD_ |
+| Avg KV cache utilization | 65.1% | 69.2% | 64.5% | 66.3% | _TBD_ |
+| Avg queue depth (EPP) | 236.8 | 252.4 | 220.4 | 236.5 | _TBD_ |
+| Error count | 4,186 / 4,882 | 4,193 | 4,173 | 4,184 | _TBD_ |
+| Avg pod startup (s) | _TBD_ | 106 | 109 | 108 | _TBD_ |
+| Cost (avg replicas × GPU/hr) | _TBD_ | 1.77 | 1.73 | 1.73 | _TBD_ |
 
 ## Decode Heavy Scenario
 
