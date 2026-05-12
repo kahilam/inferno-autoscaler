@@ -64,7 +64,7 @@ Summary of WVA benchmark runs with configuration details.
 | Max replicas | 3 | 3 | 3 | 3 | _TBD_ |
 | Avg KV cache utilization | 65.1% | 69.2% | 64.5% | 66.3% | _TBD_ |
 | Avg queue depth (EPP) | 236.8 | 252.4 | 220.4 | 236.5 | _TBD_ |
-| Error count | 4,186 / 4,882 | 4,193 | 4,173 | 4,184 | _TBD_ |
+| Error count | 4,186 | 4,193 | 4,173 | 4,184 | _TBD_ |
 | Avg pod startup (s) | _TBD_ | 106 | 109 | 108 | _TBD_ |
 | Cost (avg replicas × GPU/hr) | _TBD_ | 1.77 | 1.73 | 1.73 | _TBD_ |
 
@@ -83,7 +83,7 @@ Summary of WVA benchmark runs with configuration details.
 | Max replicas | 3 | 3 | 3 | 3 | _TBD_ |
 | Avg KV cache utilization | 88.8% | 78.2% | 70.7% | 79.2% | _TBD_ |
 | Avg queue depth (EPP) | 111.8 | 111.5 | 103.1 | 108.8 | _TBD_ |
-| Error count | 3,506 / 4,105 | 3,551 | 3,632 | 3,563 | _TBD_ |
+| Error count | 3,506 | 3,551 | 3,632 | 3,563 | _TBD_ |
 | Avg pod startup (s) | _TBD_ | 103 | 106 | 105 | _TBD_ |
 | Cost (avg replicas × GPU/hr) | _TBD_ | 1.82 | 1.96 | 1.89 | _TBD_ |
 
@@ -102,6 +102,6 @@ Summary of WVA benchmark runs with configuration details.
 | Max replicas | 3 | 3 | _TBD_ | _TBD_ |
 | Avg KV cache utilization | 66.7% | 70.2% | _TBD_ | _TBD_ |
 | Avg queue depth (EPP) | 135.1 | 176.7 | _TBD_ | _TBD_ |
-| Error count | 3,773 / 4,839 | 3,710 | _TBD_ | _TBD_ |
+| Error count | 3,773 | 3,710 | _TBD_ | _TBD_ |
 | Avg pod startup (s) | _TBD_ | 107 | _TBD_ | _TBD_ |
 | Cost (avg replicas × GPU/hr) | _TBD_ | 1.75 | _TBD_ | _TBD_ |
