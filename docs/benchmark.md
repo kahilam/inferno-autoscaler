@@ -54,38 +54,38 @@ Summary of WVA benchmark runs with configuration details.
 **llm-d Release:** v0.6.0
 **Model:** Qwen/Qwen3-32B
 **Workload:** 4000 prompt tokens, 1000 output tokens, 20 RPS, 600s duration
-**Saturation Engine:** Default(v1)
+**Saturation Engine:** Default(v1), Tuned(v1)
 
-| Metric | Run 1 | Run 2 | Run 3 | Avg |
-|--------|-------|-------|-------|-----|
-| P99 TTFT (ms) | 98,810 | _TBD_ | _TBD_ | _TBD_ |
-| P99 ITL (ms/token) | 55.06 | _TBD_ | _TBD_ | _TBD_ |
-| Avg replicas | 1.68 | _TBD_ | _TBD_ | _TBD_ |
-| Max replicas | 3 | _TBD_ | _TBD_ | _TBD_ |
-| Avg KV cache utilization | 65.1% | _TBD_ | _TBD_ | _TBD_ |
-| Avg queue depth (EPP) | 236.8 | _TBD_ | _TBD_ | _TBD_ |
-| Error count | 4,186 / 4,882 | _TBD_ | _TBD_ | _TBD_ |
-| Avg pod startup (s) | _TBD_ | _TBD_ | _TBD_ | _TBD_ |
-| Cost (avg replicas × GPU/hr) | _TBD_ | _TBD_ | _TBD_ | _TBD_ |
+| Metric | WVA v0.6.0 Default(v1) Run 1 | WVA v0.6.0 Default(v1) Run 2 | WVA v0.6.0 Default(v1) Run 3 | Avg | WVA v0.6.0 Tuned(v1) (prefill) |
+|--------|------------------------------|------------------------------|------------------------------|-----|--------------------------------|
+| P99 TTFT (ms) | 98,810 | _TBD_ | _TBD_ | _TBD_ | _TBD_ |
+| P99 ITL (ms/token) | 55.06 | _TBD_ | _TBD_ | _TBD_ | _TBD_ |
+| Avg replicas | 1.68 | _TBD_ | _TBD_ | _TBD_ | _TBD_ |
+| Max replicas | 3 | _TBD_ | _TBD_ | _TBD_ | _TBD_ |
+| Avg KV cache utilization | 65.1% | _TBD_ | _TBD_ | _TBD_ | _TBD_ |
+| Avg queue depth (EPP) | 236.8 | _TBD_ | _TBD_ | _TBD_ | _TBD_ |
+| Error count | 4,186 / 4,882 | _TBD_ | _TBD_ | _TBD_ | _TBD_ |
+| Avg pod startup (s) | _TBD_ | _TBD_ | _TBD_ | _TBD_ | _TBD_ |
+| Cost (avg replicas × GPU/hr) | _TBD_ | _TBD_ | _TBD_ | _TBD_ | _TBD_ |
 
 ## Decode Heavy Scenario
 
 **llm-d Release:** v0.6.0
 **Model:** Qwen/Qwen3-32B
 **Workload:** 1000 prompt tokens, 4000 output tokens, 20 RPS, 600s duration
-**Saturation Engine:** Default(v1)
+**Saturation Engine:** Default(v1), Tuned(v1)
 
-| Metric | Run 1 | Run 2 | Run 3 | Avg |
-|--------|-------|-------|-------|-----|
-| P99 TTFT (ms) | 85,612 | _TBD_ | _TBD_ | _TBD_ |
-| P99 ITL (ms/token) | 47.09 | _TBD_ | _TBD_ | _TBD_ |
-| Avg replicas | 1.73 | _TBD_ | _TBD_ | _TBD_ |
-| Max replicas | 3 | _TBD_ | _TBD_ | _TBD_ |
-| Avg KV cache utilization | 88.8% | _TBD_ | _TBD_ | _TBD_ |
-| Avg queue depth (EPP) | 111.8 | _TBD_ | _TBD_ | _TBD_ |
-| Error count | 3,506 / 4,105 | _TBD_ | _TBD_ | _TBD_ |
-| Avg pod startup (s) | _TBD_ | _TBD_ | _TBD_ | _TBD_ |
-| Cost (avg replicas × GPU/hr) | _TBD_ | _TBD_ | _TBD_ | _TBD_ |
+| Metric | WVA v0.6.0 Default(v1) Run 1 | WVA v0.6.0 Default(v1) Run 2 | WVA v0.6.0 Default(v1) Run 3 | Avg | WVA v0.6.0 Tuned(v1) (decode) |
+|--------|------------------------------|------------------------------|------------------------------|-----|-------------------------------|
+| P99 TTFT (ms) | 85,612 | _TBD_ | _TBD_ | _TBD_ | _TBD_ |
+| P99 ITL (ms/token) | 47.09 | _TBD_ | _TBD_ | _TBD_ | _TBD_ |
+| Avg replicas | 1.73 | _TBD_ | _TBD_ | _TBD_ | _TBD_ |
+| Max replicas | 3 | _TBD_ | _TBD_ | _TBD_ | _TBD_ |
+| Avg KV cache utilization | 88.8% | _TBD_ | _TBD_ | _TBD_ | _TBD_ |
+| Avg queue depth (EPP) | 111.8 | _TBD_ | _TBD_ | _TBD_ | _TBD_ |
+| Error count | 3,506 / 4,105 | _TBD_ | _TBD_ | _TBD_ | _TBD_ |
+| Avg pod startup (s) | _TBD_ | _TBD_ | _TBD_ | _TBD_ | _TBD_ |
+| Cost (avg replicas × GPU/hr) | _TBD_ | _TBD_ | _TBD_ | _TBD_ | _TBD_ |
 
 ## Symmetrical Scenario
 
@@ -94,8 +94,8 @@ Summary of WVA benchmark runs with configuration details.
 **Workload:** 1000 prompt tokens, 1000 output tokens, 20 RPS, 600s duration
 **Saturation Engine:** Default(v1)
 
-| Metric | Run 1 | Run 2 | Run 3 | Avg |
-|--------|-------|-------|-------|-----|
+| Metric | WVA v0.6.0 Default(v1) Run 1 | WVA v0.6.0 Default(v1) Run 2 | WVA v0.6.0 Default(v1) Run 3 | Avg |
+|--------|------------------------------|------------------------------|------------------------------|-----|
 | P99 TTFT (ms) | 101,083 | _TBD_ | _TBD_ | _TBD_ |
 | P99 ITL (ms/token) | 67.61 | _TBD_ | _TBD_ | _TBD_ |
 | Avg replicas | 1.70 | _TBD_ | _TBD_ | _TBD_ |
