@@ -94,14 +94,14 @@ Summary of WVA benchmark runs with configuration details.
 
 | Metric | Run 1 | Run 2 | Run 3 | Avg |
 |--------|-------|-------|-------|-----|
-| P99 TTFT (ms) | 264,266 | 257,501 | 253,772 | 258,513 |
-| P99 ITL (ms/token) | 196.1 | 210.3 | 186.6 | 197.7 |
-| Avg replicas | 2.46 | 2.29 | 1.77 | 2.17 |
-| Max replicas | 4 | 4 | 3 | 4 |
-| Avg KV cache utilization | 31.5% | 50.9% | 55.0% | 45.8% |
-| Avg queue depth (EPP) | 15.3 | 113.0 | 36.2 | 54.8 |
-| Error count | 6,230 | 6,021 | 7,284 | 6,512 |
-| Cost (avg replicas × GPU/hr) | 2.46 | 2.29 | 1.77 | 2.17 |
+| P99 TTFT (ms) | 264,266 | 257,501 | 265,557 | 262,441 |
+| P99 ITL (ms/token) | 196.1 | 210.3 | 182.4 | 196.3 |
+| Avg replicas | 2.46 | 2.29 | 2.55 | 2.43 |
+| Max replicas | 4 | 4 | 4 | 4 |
+| Avg KV cache utilization | 31.5% | 50.9% | 52.9% | 45.1% |
+| Avg queue depth (EPP) | 15.3 | 113.0 | 32.3 | 53.5 |
+| Error count | 6,230 | 6,021 | 6,079 | 6,110 |
+| Cost (avg replicas × GPU/hr) | 2.46 | 2.29 | 2.55 | 2.43 |
 
 ## Symmetrical Scenario
 
