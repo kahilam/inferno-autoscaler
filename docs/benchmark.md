@@ -64,9 +64,9 @@ Summary of WVA benchmark runs with configuration details.
 | Max replicas | 3 | _TBD_ | _TBD_ | _TBD_ |
 | Avg KV cache utilization | 65.1% | _TBD_ | _TBD_ | _TBD_ |
 | Avg queue depth (EPP) | 236.8 | _TBD_ | _TBD_ | _TBD_ |
-| Error count | 4,186 | _TBD_ | _TBD_ | _TBD_ |
+| Error count | 4,186 / 4,882 | _TBD_ | _TBD_ | _TBD_ |
 | Avg pod startup (s) | _TBD_ | _TBD_ | _TBD_ | _TBD_ |
-| Cost (avg replicas × GPU/hr) | 1.68 | _TBD_ | _TBD_ | _TBD_ |
+| Cost (avg replicas × GPU/hr) | _TBD_ | _TBD_ | _TBD_ | _TBD_ |
 
 ## Decode Heavy Scenario
 
@@ -83,9 +83,9 @@ Summary of WVA benchmark runs with configuration details.
 | Max replicas | 3 | _TBD_ | _TBD_ | _TBD_ |
 | Avg KV cache utilization | 88.8% | _TBD_ | _TBD_ | _TBD_ |
 | Avg queue depth (EPP) | 111.8 | _TBD_ | _TBD_ | _TBD_ |
-| Error count | 3,506 | _TBD_ | _TBD_ | _TBD_ |
+| Error count | 3,506 / 4,105 | _TBD_ | _TBD_ | _TBD_ |
 | Avg pod startup (s) | _TBD_ | _TBD_ | _TBD_ | _TBD_ |
-| Cost (avg replicas × GPU/hr) | 1.73 | _TBD_ | _TBD_ | _TBD_ |
+| Cost (avg replicas × GPU/hr) | _TBD_ | _TBD_ | _TBD_ | _TBD_ |
 
 ## Symmetrical Scenario
 
@@ -102,6 +102,6 @@ Summary of WVA benchmark runs with configuration details.
 | Max replicas | 3 | _TBD_ | _TBD_ | _TBD_ |
 | Avg KV cache utilization | 66.7% | _TBD_ | _TBD_ | _TBD_ |
 | Avg queue depth (EPP) | 135.1 | _TBD_ | _TBD_ | _TBD_ |
-| Error count | 3,773 | _TBD_ | _TBD_ | _TBD_ |
+| Error count | 3,773 / 4,839 | _TBD_ | _TBD_ | _TBD_ |
 | Avg pod startup (s) | _TBD_ | _TBD_ | _TBD_ | _TBD_ |
-| Cost (avg replicas × GPU/hr) | 1.70 | _TBD_ | _TBD_ | _TBD_ |
+| Cost (avg replicas × GPU/hr) | _TBD_ | _TBD_ | _TBD_ | _TBD_ |
