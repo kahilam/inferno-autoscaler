@@ -68,6 +68,25 @@ Summary of WVA benchmark runs with configuration details.
 | Avg pod startup (s) | 115 | 106 | 109 | 110 | _TBD_ |
 | Cost (avg replicas × GPU/hr) | _TBD_ | 1.77 | 1.73 | 1.73 | _TBD_ |
 
+### Prefill Heavy — Qwen/Qwen3-0.6B
+
+**llm-d Release:** v0.6.0
+**Model:** Qwen/Qwen3-0.6B
+**Workload:** 4000 prompt tokens, 1000 output tokens, 20 RPS, 600s duration
+**Saturation Engine:** Default(v1)
+
+| Metric | Run 1 | Run 2 | Run 3 | Avg |
+|--------|-------|-------|-------|-----|
+| P99 TTFT (ms) | 73,754 | 79,724 | _TBD_ | _TBD_ |
+| P99 ITL (ms/token) | 51.66 | 53.10 | _TBD_ | _TBD_ |
+| Avg replicas | 1.95 | 1.85 | _TBD_ | _TBD_ |
+| Max replicas | 3 | 3 | _TBD_ | _TBD_ |
+| Avg KV cache utilization | 68.1% | 61.9% | _TBD_ | _TBD_ |
+| Avg queue depth (EPP) | 68.6 | 78.9 | _TBD_ | _TBD_ |
+| Error count | 448 | 636 | _TBD_ | _TBD_ |
+| Avg pod startup (s) | 75 | 64 | _TBD_ | _TBD_ |
+| Cost (avg replicas × GPU/hr) | 1.95 | 1.85 | _TBD_ | _TBD_ |
+
 ## Decode Heavy Scenario
 
 **llm-d Release:** v0.6.0
