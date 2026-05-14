@@ -77,15 +77,15 @@ Summary of WVA benchmark runs with configuration details.
 
 | Metric | Run 1 | Run 2 | Run 3 | Avg |
 |--------|-------|-------|-------|-----|
-| P99 TTFT (ms) | 73,754 | 79,724 | 77,481 | 76,986 |
-| P99 ITL (ms/token) | 51.66 | 53.10 | 51.84 | 52.20 |
-| Avg replicas | 1.95 | 1.85 | 2.00 | 1.93 |
+| P99 TTFT (ms) | 86,969 | 79,724 | 77,481 | 81,391 |
+| P99 ITL (ms/token) | 50.87 | 53.10 | 51.84 | 51.94 |
+| Avg replicas | 1.93 | 1.85 | 2.00 | 1.93 |
 | Max replicas | 3 | 3 | 3 | 3 |
-| Avg KV cache utilization | 68.1% | 61.9% | 66.2% | 65.4% |
-| Avg queue depth (EPP) | 68.6 | 78.9 | 84.8 | 77.4 |
-| Error count | 448 | 636 | 182 | 422 |
-| Avg pod startup (s) | 75 | 64 | 65 | 68 |
-| Cost (avg replicas × GPU/hr) | 1.95 | 1.85 | 2.00 | 1.93 |
+| Avg KV cache utilization | 67.3% | 61.9% | 66.2% | 65.1% |
+| Avg queue depth (EPP) | 65.9 | 78.9 | 84.8 | 76.5 |
+| Error count | 384 | 636 | 182 | 401 |
+| Avg pod startup (s) | 65 | 64 | 65 | 65 |
+| Cost (avg replicas × GPU/hr) | 1.93 | 1.85 | 2.00 | 1.93 |
 
 ## Decode Heavy Scenario
 
