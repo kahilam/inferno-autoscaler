@@ -51,6 +51,8 @@ Summary of WVA benchmark runs with configuration details.
 
 ## Prefill Heavy Scenario
 
+### Prefill Heavy — Qwen/Qwen3-32B
+
 **llm-d Release:** v0.6.0
 **Model:** Qwen/Qwen3-32B
 **Workload:** 4000 prompt tokens, 1000 output tokens, 20 RPS, 600s duration
@@ -88,6 +90,8 @@ Summary of WVA benchmark runs with configuration details.
 | Cost (avg replicas × GPU/hr) | 1.93 | 1.85 | 2.00 | 1.93 |
 
 ## Decode Heavy Scenario
+
+### Decode Heavy — Qwen/Qwen3-32B
 
 **llm-d Release:** v0.6.0
 **Model:** Qwen/Qwen3-32B
@@ -127,6 +131,8 @@ Summary of WVA benchmark runs with configuration details.
 
 ## Bursty Scenario
 
+### Bursty — Qwen/Qwen3-32B
+
 **llm-d Release:** v0.6.0
 **Model:** Qwen/Qwen3-32B
 **Workload:** ~1000 prompt tokens, ~1000 output tokens, multi-stage bursty RPS (15→2→10→15→5→2), 900s total duration
@@ -165,6 +171,8 @@ Summary of WVA benchmark runs with configuration details.
 | Cost (avg replicas × GPU/hr) | 2.03 | 1.95 | 1.99 | 1.99 |
 
 ## Symmetrical Scenario
+
+### Symmetrical — Qwen/Qwen3-32B
 
 **llm-d Release:** v0.6.0
 **Model:** Qwen/Qwen3-32B
