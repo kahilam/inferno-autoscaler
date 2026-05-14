@@ -144,6 +144,26 @@ Summary of WVA benchmark runs with configuration details.
 | Avg pod startup (s) | 109 | 101 | 100 | 103 |
 | Cost (avg replicas × GPU/hr) | 2.46 | 2.29 | 2.55 | 2.43 |
 
+### Bursty — Qwen/Qwen3-0.6B
+
+**llm-d Release:** v0.6.0
+**Model:** Qwen/Qwen3-0.6B
+**Workload:** ~1000 prompt tokens, ~1000 output tokens, multi-stage bursty RPS (15→2→10→15→5→2), 900s total duration
+**Saturation Engine:** Default(v1)
+**Harness:** inference-perf
+
+| Metric | Run 1 | Run 2 | Run 3 | Avg |
+|--------|-------|-------|-------|-----|
+| P99 TTFT (ms) | 14,900 | 11,671 | 173,102 | 66,558 |
+| P99 ITL (ms/token) | 49.0 | 47.8 | 144.7 | 80.5 |
+| Avg replicas | 2.03 | 1.95 | 2.78 | 2.25 |
+| Max replicas | 3 | 3 | 4 | 4 |
+| Avg KV cache utilization | 36.7% | 34.2% | 41.1% | 37.3% |
+| Avg queue depth (EPP) | 16.5 | 17.0 | 231.2 | 88.2 |
+| Error count | 54 | 49 | 182 | 95 |
+| Avg pod startup (s) | 66 | 65 | 71 | 67 |
+| Cost (avg replicas × GPU/hr) | 2.03 | 1.95 | 2.78 | 2.25 |
+
 ## Symmetrical Scenario
 
 **llm-d Release:** v0.6.0
