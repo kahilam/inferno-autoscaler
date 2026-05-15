@@ -218,15 +218,15 @@ Summary of WVA benchmark runs with configuration details.
 
 | Metric | Run 1 | Run 2 | Run 3 | Avg |
 |--------|-------|-------|-------|-----|
-| P99 TTFT (ms) | 21,925 | _pending_ | _pending_ | — |
-| P99 ITL (ms/token) | 49.8 | _pending_ | _pending_ | — |
-| Avg replicas | 1.62 | _pending_ | _pending_ | — |
-| Max replicas | 3 | _pending_ | _pending_ | — |
-| Avg KV cache utilization | 29.8% | _pending_ | _pending_ | — |
-| Avg queue depth (EPP) | 0.9 | _pending_ | _pending_ | — |
-| Error count | 73 | _pending_ | _pending_ | — |
-| Avg pod startup (s) | 65 | _pending_ | _pending_ | — |
-| Cost (avg replicas × GPU/hr) | 1.62 | _pending_ | _pending_ | — |
+| P99 TTFT (ms) | 21,925 | 20,680 | _pending_ | — |
+| P99 ITL (ms/token) | 49.8 | 49.1 | _pending_ | — |
+| Avg replicas | 1.62 | 1.66 | _pending_ | — |
+| Max replicas | 3 | 3 | _pending_ | — |
+| Avg KV cache utilization | 29.8% | 27.4% | _pending_ | — |
+| Avg queue depth (EPP) | 0.9 | 1.3 | _pending_ | — |
+| Error count | 73 | 68 | _pending_ | — |
+| Avg pod startup (s) | 65 | 63 | _pending_ | — |
+| Cost (avg replicas × GPU/hr) | 1.62 | 1.66 | _pending_ | — |
 
 ## Symmetrical Scenario
 
