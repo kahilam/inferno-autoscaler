@@ -157,15 +157,15 @@ Summary of WVA benchmark runs with configuration details.
 
 | Metric | Run 1 | Run 2 | Run 3 | Avg |
 |--------|-------|-------|-------|-----|
-| P99 TTFT (ms) | 59,867 | 60,983 | 55,166 | 58,672 |
-| P99 ITL (ms/token) | 81.50 | 38.00 | 56.65 | 58.72 |
-| Avg replicas | 2.60 | 2.24 | 2.88 | 2.57 |
+| P99 TTFT (ms) | 60,654 | 60,983 | 55,166 | 58,934 |
+| P99 ITL (ms/token) | 39.61 | 38.00 | 56.65 | 44.75 |
+| Avg replicas | 2.65 | 2.24 | 2.88 | 2.59 |
 | Max replicas | 4 | 3 | 4 | 4 |
-| Avg KV cache utilization | 60.1% | 58.0% | 57.6% | 58.6% |
-| Avg queue depth (EPP) | 26.6 | 40.7 | 21.2 | 29.5 |
-| Error count | 3,161 | 3,207 | 1,743 | 2,703 |
-| Avg pod startup (s) | 71 | 68 | 67 | 69 |
-| Cost (avg replicas × GPU/hr) | 2.60 | 2.24 | 2.88 | 2.57 |
+| Avg KV cache utilization | 55.9% | 58.0% | 57.6% | 57.2% |
+| Avg queue depth (EPP) | 30.4 | 40.7 | 21.2 | 30.8 |
+| Error count | 2,610 | 3,207 | 1,743 | 2,520 |
+| Avg pod startup (s) | 64 | 68 | 67 | 66 |
+| Cost (avg replicas × GPU/hr) | 2.65 | 2.24 | 2.88 | 2.59 |
 
 ## Bursty Scenario
 
