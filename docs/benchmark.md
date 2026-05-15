@@ -210,10 +210,23 @@ Summary of WVA benchmark runs with configuration details.
 
 ### Bursty — Qwen/Qwen3-0.6B (1800s)
 
-> **Note:** The 1800s bursty runs failed due to an `inference-perf` harness bug (`IndexError: index out of bounds`).
-> Scaling the stage durations by 3× caused the total request count to exceed the harness's pre-generated
-> input buffer (5000 requests). This needs to be fixed in `inference-perf` before 1800s bursty results
-> can be collected.
+**llm-d Release:** v0.6.0
+**Model:** Qwen/Qwen3-0.6B
+**Workload:** ~1000 prompt tokens, ~1000 output tokens, multi-stage bursty RPS (15→2→10→15→5→2), 1800s total duration
+**Saturation Engine:** Default(v1)
+**Harness:** inference-perf
+
+| Metric | Run 1 | Run 2 | Run 3 | Avg |
+|--------|-------|-------|-------|-----|
+| P99 TTFT (ms) | 21,925 | _pending_ | _pending_ | — |
+| P99 ITL (ms/token) | 49.8 | _pending_ | _pending_ | — |
+| Avg replicas | 1.62 | _pending_ | _pending_ | — |
+| Max replicas | 3 | _pending_ | _pending_ | — |
+| Avg KV cache utilization | 29.8% | _pending_ | _pending_ | — |
+| Avg queue depth (EPP) | 0.9 | _pending_ | _pending_ | — |
+| Error count | 73 | _pending_ | _pending_ | — |
+| Avg pod startup (s) | 65 | _pending_ | _pending_ | — |
+| Cost (avg replicas × GPU/hr) | 1.62 | _pending_ | _pending_ | — |
 
 ## Symmetrical Scenario
 
