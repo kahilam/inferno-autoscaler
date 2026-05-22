@@ -77,17 +77,17 @@ Summary of WVA benchmark runs with configuration details.
 **Workload:** 4000 prompt tokens, 1000 output tokens, 20 RPS, 600s duration
 **Setup:** WVA disabled, HPA deleted, 2 constant replicas ([#1139](https://github.com/llm-d/llm-d-workload-variant-autoscaler/issues/1139))
 
-| Metric | Run 1 |
-|--------|-------|
-| P99 TTFT (ms) | 534,272 |
-| P99 ITL (ms/token) | 55.96 |
-| Avg replicas | 2.00 |
-| Max replicas | 2 |
-| Avg KV cache utilization | 51.0% |
-| Avg queue depth (EPP) | 170.2 |
-| Error count | 0 |
-| Incomplete count | 511 |
-| Avg pod startup (s) | 98 |
+| Metric | Run 1 | Run 2 | Run 3 | Avg |
+|--------|-------|-------|-------|-----|
+| P99 TTFT (ms) | 534,272 | 546,613 | 553,154 | 544,680 |
+| P99 ITL (ms/token) | 55.96 | 58.10 | 58.13 | 57.40 |
+| Avg replicas | 2.00 | 2.00 | 2.00 | 2.00 |
+| Max replicas | 2 | 2 | 2 | 2 |
+| Avg KV cache utilization | 51.0% | 84.3% | 86.6% | 74.0% |
+| Avg queue depth (EPP) | 170.2 | 144.6 | 145.1 | 153.3 |
+| Error count | 0 | 0 | 0 | 0 |
+| Incomplete count | 511 | 511 | 511 | 511 |
+| Avg pod startup (s) | 98 | 98 | 99 | 98 |
 
 ### Prefill Heavy — Qwen/Qwen3-0.6B (600s)
 
